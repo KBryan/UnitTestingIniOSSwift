@@ -9,6 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var myTextField: UITextField!
+    
+    @IBOutlet weak var myLabel: UILabel!
+    @IBAction func updateLabel(sender: AnyObject) {
+        
+        self.myLabel.text = myTextField.text
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

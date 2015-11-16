@@ -28,7 +28,7 @@ class UnitTestingTests: XCTestCase {
     func testNonZeroBillWithZeroTaxAndTipShouldReturnZero() {
         let calc = TipCalculator()
         let result = calc.calculator(20, taxPercentage: 0, tipPercentage: 0)
-        XCTAssertEqual(result!, 20, "Value should return 0")
+        XCTAssertEqual(result!, 0, "Value should return 0")
     }
     func testThisShouldPass() {
         let sum = 2 + 2
